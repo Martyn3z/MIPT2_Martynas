@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MIPT2_Martynas</string>
+    <string-array name="selectionItems">
+        <item>Count Everything</item>
+        <item>Count Words</item>
+    </string-array>
+</resources>
