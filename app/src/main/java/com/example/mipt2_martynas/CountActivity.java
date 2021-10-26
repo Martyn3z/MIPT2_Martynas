@@ -16,7 +16,7 @@ public class CountActivity {
         int length=text.length();
         for (int i=0; i<length-1; i++) {
             j = i + 1;
-            if (text.charAt(i) != ' ' && text.charAt(j) == ' ' || text.charAt(j) != ' ' && j==length-1)
+            if (Character.isLetter(text.charAt(j)) && j == length-1 || Character.isLetter(text.charAt(i)) && text.charAt(j) == ',' || Character.isLetter(text.charAt(i)) && text.charAt(j) == '.' || Character.isLetter(text.charAt(i)) && text.charAt(j) == ' ')
                 words++;
         }
         String wordsConverted = String.valueOf(words);
